@@ -14,31 +14,31 @@
 
 ## Features
 
-- **One shared rAF loop** — merges every requestAnimationFrame call into a single loop to cut per-frame overhead
-- **Explicit ordering** — run animations in an explicit order each frame instead of registration order
-- **Custom frame rates** — throttle callbacks to a target FPS (absolute like `30`, or relative like `'50%'`) independent of the display refresh
-- **Frame budget** — every callback gets `state.budget()` (ms left this frame) to gracefully skip or chunk work
-- **Playback control** — `play()`, `pause()` and `restart()` the whole loop at once
-- **rAF patching** — `patch()` absorbs every native `requestAnimationFrame` (including third-party and minified loops) into the shared loop
-- **Live profiler overlay** — `tempus/profiler` draws a real-time timeline of how each callback fills the frame budget
-- **Introspection** — `Tempus.inspect()` exposes per-callback timing for added and patched loops alike
-- **Library-friendly** — drop-in compatible with GSAP, Lenis, and other animation tools
-- **Zero dependencies** — no external packages, nothing extra to audit
-- **~1KB gzipped** — a negligible footprint for a core primitive
+- **One shared rAF loop** — merges every requestAnimationFrame call into a single loop to cut per-frame overhead.
+- **Explicit ordering** — run animations in an explicit order each frame instead of registration order.
+- **Custom frame rates** — throttle callbacks to a target FPS (absolute like `30`, or relative like `'50%'`) independent of the display refresh.
+- **Frame budget** — every callback gets `state.budget()` (ms left this frame) to gracefully skip or chunk work.
+- **Playback control** — `play()`, `pause()` and `restart()` the whole loop at once.
+- **rAF patching** — `patch()` absorbs every native `requestAnimationFrame` (including third-party and minified loops) into the shared loop.
+- **Live profiler overlay** — `tempus/profiler` draws a real-time timeline of how each callback fills the frame budget.
+- **Introspection** — `Tempus.inspect()` exposes per-callback timing for added and patched loops alike.
+- **Library-friendly** — drop-in compatible with GSAP, Lenis, and other animation tools.
+- **Zero dependencies** — no external packages, nothing extra to audit.
+- **~1KB gzipped** — a negligible footprint for a core primitive.
 
 ## Installation
 
-using package manager
+using package manager.
 
 ```bash
-npm install tempus
+npm install tempus.
 ```
 
 ```js
-import Tempus from 'tempus'
+import Tempus from 'tempus'.
 ```
 
-using script tag
+using script tag.
 
 ```html
 <script src="https://unpkg.com/tempus@1.0.0-dev.17/dist/tempus.min.js"></script> 
